@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\c++.exe -ID:/projects/cpp/3dX/core/renderer -o CMakeFiles\\3dX.dir\\main.cpp.obj -c D:\\projects\\cpp\\3dX\\main.cpp",
+  "file": "D:\\projects\\cpp\\3dX\\main.cpp",
+  "output": "CMakeFiles\\3dX.dir\\main.cpp.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\c++.exe -o core\\CMakeFiles\\core.dir\\renderer\\renderer.cpp.obj -c D:\\projects\\cpp\\3dX\\core\\renderer\\renderer.cpp",
+  "file": "D:\\projects\\cpp\\3dX\\core\\renderer\\renderer.cpp",
+  "output": "core\\CMakeFiles\\core.dir\\renderer\\renderer.cpp.obj"
+}
+]

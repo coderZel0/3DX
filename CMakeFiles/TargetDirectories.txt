@@ -1,0 +1,6 @@
+D:/projects/cpp/3dX/CMakeFiles/3dX.dir
+D:/projects/cpp/3dX/CMakeFiles/edit_cache.dir
+D:/projects/cpp/3dX/CMakeFiles/rebuild_cache.dir
+D:/projects/cpp/3dX/core/CMakeFiles/core.dir
+D:/projects/cpp/3dX/core/CMakeFiles/edit_cache.dir
+D:/projects/cpp/3dX/core/CMakeFiles/rebuild_cache.dir
