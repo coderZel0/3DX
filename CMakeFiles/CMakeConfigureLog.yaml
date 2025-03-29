@@ -5627,3 +5627,37 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/mingw64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/mingw64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "vendor/SDL_image/cmake/PrivateSdlFunctions.cmake:247 (check_c_source_compiles)"
+      - "vendor/SDL_image/cmake/PrivateSdlFunctions.cmake:288 (sdl_check_linker_flag)"
+      - "vendor/SDL_image/CMakeLists.txt:351 (sdl_target_link_options_no_undefined)"
+    checks:
+      - "Performing Test HAVE_WL_NO_UNDEFINED"
+    directories:
+      source: "D:/projects/cpp/3dX/CMakeFiles/CMakeScratch/TryCompile-fzugm1"
+      binary: "D:/projects/cpp/3dX/CMakeFiles/CMakeScratch/TryCompile-fzugm1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/projects/cpp/3dX/vendor/SDL_image/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_WL_NO_UNDEFINED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/projects/cpp/3dX/CMakeFiles/CMakeScratch/TryCompile-fzugm1'
+        
+        Run Build Command(s): C:/mingw64/bin/ninja.exe -v cmTC_ff3c9
+        [1/2] C:\\mingw64\\bin\\gcc.exe -DHAVE_WL_NO_UNDEFINED   -o CMakeFiles/cmTC_ff3c9.dir/src.c.obj -c D:/projects/cpp/3dX/CMakeFiles/CMakeScratch/TryCompile-fzugm1/src.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\mingw64\\bin\\gcc.exe  -Wl,--no-undefined CMakeFiles/cmTC_ff3c9.dir/src.c.obj -o cmTC_ff3c9.exe -Wl,--out-implib,libcmTC_ff3c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...

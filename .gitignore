@@ -1,4 +1,6 @@
 .cache/
 *.exe
 compile_commands.json
-.ninja_logs/
+.ninja_log/
+build/
+bin/

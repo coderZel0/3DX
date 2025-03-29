@@ -1,7 +1,7 @@
 [
 {
   "directory": "D:/projects/cpp/3dX",
-  "command": "C:\\mingw64\\bin\\c++.exe -ID:/projects/cpp/3dX/core/renderer -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -o CMakeFiles\\3dX.dir\\main.cpp.obj -c D:\\projects\\cpp\\3dX\\main.cpp",
+  "command": "C:\\mingw64\\bin\\c++.exe -ID:/projects/cpp/3dX/core/renderer -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -o CMakeFiles\\3dX.dir\\main.cpp.obj -c D:\\projects\\cpp\\3dX\\main.cpp",
   "file": "D:\\projects\\cpp\\3dX\\main.cpp",
   "output": "CMakeFiles\\3dX.dir\\main.cpp.obj"
 },
@@ -10,6 +10,132 @@
   "command": "C:\\mingw64\\bin\\c++.exe -o core\\CMakeFiles\\core.dir\\renderer\\renderer.cpp.obj -c D:\\projects\\cpp\\3dX\\core\\renderer\\renderer.cpp",
   "file": "D:\\projects\\cpp\\3dX\\core\\renderer\\renderer.cpp",
   "output": "core\\CMakeFiles\\core.dir\\renderer\\renderer.cpp.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_WIC.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_WIC.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_WIC.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_WIC.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_avif.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_avif.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_avif.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_avif.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_bmp.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_bmp.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_bmp.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_bmp.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_gif.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_gif.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_gif.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_gif.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_jpg.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_jpg.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_jpg.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_jpg.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_jxl.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_jxl.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_jxl.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_jxl.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_lbm.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_lbm.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_lbm.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_lbm.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_pcx.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_pcx.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_pcx.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_pcx.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_png.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_png.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_png.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_png.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_pnm.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_pnm.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_pnm.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_pnm.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_qoi.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_qoi.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_qoi.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_qoi.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_stb.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_stb.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_stb.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_stb.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_svg.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_svg.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_svg.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_svg.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_tga.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_tga.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_tga.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_tga.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_tif.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_tif.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_tif.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_tif.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_webp.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_webp.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_webp.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_webp.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_xcf.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_xcf.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_xcf.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_xcf.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_xpm.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_xpm.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_xpm.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_xpm.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include -fvisibility=hidden -Wall -Wextra -o vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_xv.c.obj -c D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_xv.c",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\IMG_xv.c",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\IMG_xv.c.obj"
+},
+{
+  "directory": "D:/projects/cpp/3dX",
+  "command": "C:\\mingw64\\bin\\windres.exe -O coff -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I D:/projects/cpp/3dX/vendor/SDL_image/include -I D:/projects/cpp/3dX/vendor/SDL/include-revision -I D:/projects/cpp/3dX/vendor/SDL/include D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\version.rc vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\version.rc.obj",
+  "file": "D:\\projects\\cpp\\3dX\\vendor\\SDL_image\\src\\version.rc",
+  "output": "vendor\\SDL_image\\CMakeFiles\\SDL3_image-shared.dir\\src\\version.rc.obj"
 },
 {
   "directory": "D:/projects/cpp/3dX",

@@ -42,11 +42,11 @@ cmake_ninja_workdir = D$:/projects/cpp/3dX/
 #############################################
 # Order-only phony target for 3dX
 
-build cmake_object_order_depends_target_3dX: phony || cmake_object_order_depends_target_SDL3-shared cmake_object_order_depends_target_core
+build cmake_object_order_depends_target_3dX: phony || cmake_object_order_depends_target_SDL3-shared cmake_object_order_depends_target_SDL3_image-shared cmake_object_order_depends_target_core
 
 build CMakeFiles/3dX.dir/main.cpp.obj: CXX_COMPILER__3dX_unscanned_ D$:/projects/cpp/3dX/main.cpp || cmake_object_order_depends_target_3dX
   DEP_FILE = CMakeFiles\3dX.dir\main.cpp.obj.d
-  INCLUDES = -ID:/projects/cpp/3dX/core/renderer -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  INCLUDES = -ID:/projects/cpp/3dX/core/renderer -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
   OBJECT_DIR = CMakeFiles\3dX.dir
   OBJECT_FILE_DIR = CMakeFiles\3dX.dir
 
@@ -58,8 +58,8 @@ build CMakeFiles/3dX.dir/main.cpp.obj: CXX_COMPILER__3dX_unscanned_ D$:/projects
 #############################################
 # Link the executable 3dX.exe
 
-build 3dX.exe: CXX_EXECUTABLE_LINKER__3dX_ CMakeFiles/3dX.dir/main.cpp.obj | core/libcore.a vendor/SDL/libSDL3.dll.a vendor/SDL/src/dynapi/SDL_dynapi.sym || SDL3.dll core/libcore.a
-  LINK_LIBRARIES = core/libcore.a  vendor/SDL/libSDL3.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+build 3dX.exe: CXX_EXECUTABLE_LINKER__3dX_ CMakeFiles/3dX.dir/main.cpp.obj | core/libcore.a vendor/SDL_image/libSDL3_image.dll.a vendor/SDL/libSDL3.dll.a vendor/SDL/src/dynapi/SDL_dynapi.sym || SDL3.dll SDL3_image.dll core/libcore.a
+  LINK_LIBRARIES = core/libcore.a  vendor/SDL_image/libSDL3_image.dll.a  vendor/SDL/libSDL3.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\3dX.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -174,6 +174,229 @@ build vendor/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build vendor/rebuild_cache: phony vendor/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/projects/cpp/3dX/vendor/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target SDL3_image-shared
+
+
+#############################################
+# Order-only phony target for SDL3_image-shared
+
+build cmake_object_order_depends_target_SDL3_image-shared: phony || .
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_WIC.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_WIC.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_WIC.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_avif.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_avif.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_avif.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_bmp.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_bmp.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_bmp.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_gif.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_gif.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_gif.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_jpg.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_jpg.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_jpg.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_jxl.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_jxl.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_jxl.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_lbm.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_lbm.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_lbm.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_pcx.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_pcx.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_pcx.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_png.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_png.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_png.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_pnm.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_pnm.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_pnm.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_qoi.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_qoi.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_qoi.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_stb.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_stb.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_stb.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_svg.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_svg.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_svg.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_tga.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_tga.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_tga.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_tif.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_tif.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_tif.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_webp.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_webp.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_webp.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_xcf.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_xcf.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_xcf.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_xpm.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_xpm.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_xpm.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_xv.c.obj: C_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/IMG_xv.c || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\IMG_xv.c.obj.d
+  FLAGS = -fvisibility=hidden -Wall -Wextra
+  INCLUDES = -ID:/projects/cpp/3dX/vendor/SDL_image/include -ID:/projects/cpp/3dX/vendor/SDL/include-revision -ID:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+build vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/version.rc.obj: RC_COMPILER__SDL3_image-shared_unscanned_ D$:/projects/cpp/3dX/vendor/SDL_image/src/version.rc || cmake_object_order_depends_target_SDL3_image-shared
+  DEFINES = -DBUILD_SDL -DDLL_EXPORT -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=3 -DSDL_BUILD_MICRO_VERSION=0 -DSDL_BUILD_MINOR_VERSION=3 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE
+  DEP_FILE = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src\version.rc.obj.d
+  INCLUDES = -I D:/projects/cpp/3dX/vendor/SDL_image/include -I D:/projects/cpp/3dX/vendor/SDL/include-revision -I D:/projects/cpp/3dX/vendor/SDL/include
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  OBJECT_FILE_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir\src
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target SDL3_image-shared
+
+
+#############################################
+# Link the shared library SDL3_image.dll
+
+build SDL3_image.dll vendor/SDL_image/libSDL3_image.dll.a: C_SHARED_LIBRARY_LINKER__SDL3_image-shared_ vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_WIC.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_avif.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_bmp.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_gif.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_jpg.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_jxl.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_lbm.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_pcx.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_png.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_pnm.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_qoi.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_stb.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_svg.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_tga.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_tif.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_webp.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_xcf.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_xpm.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/IMG_xv.c.obj vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir/src/version.rc.obj | vendor/SDL/libSDL3.dll.a vendor/SDL_image/src/SDL_image.sym vendor/SDL/src/dynapi/SDL_dynapi.sym
+  LINK_FLAGS = -static-libgcc -Wl,--version-script=D:/projects/cpp/3dX/vendor/SDL_image/src/SDL_image.sym -Wl,--no-undefined
+  LINK_LIBRARIES = vendor/SDL/libSDL3.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = vendor\SDL_image\CMakeFiles\SDL3_image-shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = SDL3_image.dll
+  TARGET_IMPLIB = vendor\SDL_image\libSDL3_image.dll.a
+  TARGET_PDB = SDL3_image.dll.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build vendor/SDL_image/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\projects\cpp\3dX\vendor\SDL_image && C:\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build vendor/SDL_image/edit_cache: phony vendor/SDL_image/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build vendor/SDL_image/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\projects\cpp\3dX\vendor\SDL_image && C:\mingw64\bin\cmake.exe --regenerate-during-build -SD:\projects\cpp\3dX -BD:\projects\cpp\3dX"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build vendor/SDL_image/rebuild_cache: phony vendor/SDL_image/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -2420,6 +2643,8 @@ build 3dX: phony 3dX.exe
 
 build SDL3-shared: phony SDL3.dll
 
+build SDL3_image-shared: phony SDL3_image.dll
+
 build SDL3_test: phony vendor/SDL/libSDL3_test.a
 
 build SDL_uclibc: phony vendor/SDL/libSDL_uclibc.a
@@ -2464,20 +2689,27 @@ build vendor/all: phony vendor/SDL/all
 build vendor/SDL/all: phony SDL3.dll vendor/SDL/libSDL3_test.a vendor/SDL/libSDL_uclibc.a
 
 # =============================================================================
+
+#############################################
+# Folder: D:/projects/cpp/3dX/vendor/SDL_image
+
+build vendor/SDL_image/all: phony SDL3_image.dll
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | .git/modules/vendor/SDL/HEAD .git/modules/vendor/SDL/refs/heads/main C$:/mingw64/share/cmake-3.30/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/mingw64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeDependentOption.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeParseArguments.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakePushCheckState.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCSourceRuns.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckIncludeFile.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLanguage.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLibraryExists.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLinkerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckStructHasMember.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckSymbolExists.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/mingw64/share/cmake-3.30/Modules/FindGit.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPackageMessage.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPkgConfig.cmake C$:/mingw64/share/cmake-3.30/Modules/GNUInstallDirs.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckFlagCommonConfig.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckLinkerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckSourceRuns.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/mingw64/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.30.2/CMakeCCompiler.cmake CMakeFiles/3.30.2/CMakeCXXCompiler.cmake CMakeFiles/3.30.2/CMakeRCCompiler.cmake CMakeFiles/3.30.2/CMakeSystem.cmake CMakeLists.txt core/CMakeLists.txt vendor/CMakeLists.txt vendor/SDL/CMakeFiles/SDL_build_config.h.intermediate vendor/SDL/CMakeFiles/git-data/grabRef.cmake vendor/SDL/CMakeLists.txt vendor/SDL/cmake/3rdparty.cmake vendor/SDL/cmake/FindLibUSB.cmake vendor/SDL/cmake/GetGitRevisionDescription.cmake vendor/SDL/cmake/GetGitRevisionDescription.cmake.in vendor/SDL/cmake/PreseedEmscriptenCache.cmake vendor/SDL/cmake/PreseedMSVCCache.cmake vendor/SDL/cmake/SDL3Config.cmake.in vendor/SDL/cmake/macros.cmake vendor/SDL/cmake/sdlchecks.cmake vendor/SDL/cmake/sdlcompilers.cmake vendor/SDL/cmake/sdlcpu.cmake vendor/SDL/cmake/sdlmanpages.cmake vendor/SDL/cmake/sdlplatform.cmake vendor/SDL/cmake/sdltargets.cmake vendor/SDL/include/build_config/SDL_build_config.h.cmake vendor/SDL/include/build_config/SDL_revision.h.cmake
+build build.ninja: RERUN_CMAKE | .git/modules/vendor/SDL/HEAD .git/modules/vendor/SDL/refs/heads/main C$:/mingw64/share/cmake-3.30/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/mingw64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeDependentOption.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeParseArguments.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakePushCheckState.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCSourceRuns.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckIncludeFile.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLanguage.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLibraryExists.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLinkerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckStructHasMember.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckSymbolExists.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/mingw64/share/cmake-3.30/Modules/FeatureSummary.cmake C$:/mingw64/share/cmake-3.30/Modules/FindGit.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPackageMessage.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPkgConfig.cmake C$:/mingw64/share/cmake-3.30/Modules/FindTIFF.cmake C$:/mingw64/share/cmake-3.30/Modules/GNUInstallDirs.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckFlagCommonConfig.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckLinkerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckSourceRuns.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/mingw64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake C$:/mingw64/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.30.2/CMakeCCompiler.cmake CMakeFiles/3.30.2/CMakeCXXCompiler.cmake CMakeFiles/3.30.2/CMakeRCCompiler.cmake CMakeFiles/3.30.2/CMakeSystem.cmake CMakeLists.txt core/CMakeLists.txt vendor/CMakeLists.txt vendor/SDL/CMakeFiles/SDL_build_config.h.intermediate vendor/SDL/CMakeFiles/git-data/grabRef.cmake vendor/SDL/CMakeLists.txt vendor/SDL/SDL3Config.cmake vendor/SDL/SDL3ConfigVersion.cmake vendor/SDL/SDL3headersTargets.cmake vendor/SDL/SDL3sharedTargets.cmake vendor/SDL/SDL3testTargets.cmake vendor/SDL/cmake/3rdparty.cmake vendor/SDL/cmake/FindLibUSB.cmake vendor/SDL/cmake/GetGitRevisionDescription.cmake vendor/SDL/cmake/GetGitRevisionDescription.cmake.in vendor/SDL/cmake/PreseedEmscriptenCache.cmake vendor/SDL/cmake/PreseedMSVCCache.cmake vendor/SDL/cmake/SDL3Config.cmake.in vendor/SDL/cmake/macros.cmake vendor/SDL/cmake/sdlchecks.cmake vendor/SDL/cmake/sdlcompilers.cmake vendor/SDL/cmake/sdlcpu.cmake vendor/SDL/cmake/sdlmanpages.cmake vendor/SDL/cmake/sdlplatform.cmake vendor/SDL/cmake/sdltargets.cmake vendor/SDL/include/build_config/SDL_build_config.h.cmake vendor/SDL/include/build_config/SDL_revision.h.cmake vendor/SDL_image/CMakeLists.txt vendor/SDL_image/cmake/GetGitRevisionDescription.cmake vendor/SDL_image/cmake/PrivateSdlFunctions.cmake vendor/SDL_image/cmake/sdlcpu.cmake vendor/SDL_image/cmake/sdlmanpages.cmake vendor/SDL_image/cmake/sdlplatform.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build .git/modules/vendor/SDL/HEAD .git/modules/vendor/SDL/refs/heads/main C$:/mingw64/share/cmake-3.30/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/mingw64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeDependentOption.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeParseArguments.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakePushCheckState.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCSourceRuns.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckIncludeFile.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLanguage.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLibraryExists.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLinkerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckStructHasMember.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckSymbolExists.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/mingw64/share/cmake-3.30/Modules/FindGit.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPackageMessage.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPkgConfig.cmake C$:/mingw64/share/cmake-3.30/Modules/GNUInstallDirs.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckFlagCommonConfig.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckLinkerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckSourceRuns.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/mingw64/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.30.2/CMakeCCompiler.cmake CMakeFiles/3.30.2/CMakeCXXCompiler.cmake CMakeFiles/3.30.2/CMakeRCCompiler.cmake CMakeFiles/3.30.2/CMakeSystem.cmake CMakeLists.txt core/CMakeLists.txt vendor/CMakeLists.txt vendor/SDL/CMakeFiles/SDL_build_config.h.intermediate vendor/SDL/CMakeFiles/git-data/grabRef.cmake vendor/SDL/CMakeLists.txt vendor/SDL/cmake/3rdparty.cmake vendor/SDL/cmake/FindLibUSB.cmake vendor/SDL/cmake/GetGitRevisionDescription.cmake vendor/SDL/cmake/GetGitRevisionDescription.cmake.in vendor/SDL/cmake/PreseedEmscriptenCache.cmake vendor/SDL/cmake/PreseedMSVCCache.cmake vendor/SDL/cmake/SDL3Config.cmake.in vendor/SDL/cmake/macros.cmake vendor/SDL/cmake/sdlchecks.cmake vendor/SDL/cmake/sdlcompilers.cmake vendor/SDL/cmake/sdlcpu.cmake vendor/SDL/cmake/sdlmanpages.cmake vendor/SDL/cmake/sdlplatform.cmake vendor/SDL/cmake/sdltargets.cmake vendor/SDL/include/build_config/SDL_build_config.h.cmake vendor/SDL/include/build_config/SDL_revision.h.cmake: phony
+build .git/modules/vendor/SDL/HEAD .git/modules/vendor/SDL/refs/heads/main C$:/mingw64/share/cmake-3.30/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/mingw64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeDependentOption.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeParseArguments.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakePushCheckState.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/mingw64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCSourceRuns.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckIncludeFile.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLanguage.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLibraryExists.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckLinkerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckStructHasMember.cmake C$:/mingw64/share/cmake-3.30/Modules/CheckSymbolExists.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/mingw64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/mingw64/share/cmake-3.30/Modules/FeatureSummary.cmake C$:/mingw64/share/cmake-3.30/Modules/FindGit.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPackageMessage.cmake C$:/mingw64/share/cmake-3.30/Modules/FindPkgConfig.cmake C$:/mingw64/share/cmake-3.30/Modules/FindTIFF.cmake C$:/mingw64/share/cmake-3.30/Modules/GNUInstallDirs.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckFlagCommonConfig.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckLinkerFlag.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake C$:/mingw64/share/cmake-3.30/Modules/Internal/CheckSourceRuns.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/mingw64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/mingw64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake C$:/mingw64/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.30.2/CMakeCCompiler.cmake CMakeFiles/3.30.2/CMakeCXXCompiler.cmake CMakeFiles/3.30.2/CMakeRCCompiler.cmake CMakeFiles/3.30.2/CMakeSystem.cmake CMakeLists.txt core/CMakeLists.txt vendor/CMakeLists.txt vendor/SDL/CMakeFiles/SDL_build_config.h.intermediate vendor/SDL/CMakeFiles/git-data/grabRef.cmake vendor/SDL/CMakeLists.txt vendor/SDL/SDL3Config.cmake vendor/SDL/SDL3ConfigVersion.cmake vendor/SDL/SDL3headersTargets.cmake vendor/SDL/SDL3sharedTargets.cmake vendor/SDL/SDL3testTargets.cmake vendor/SDL/cmake/3rdparty.cmake vendor/SDL/cmake/FindLibUSB.cmake vendor/SDL/cmake/GetGitRevisionDescription.cmake vendor/SDL/cmake/GetGitRevisionDescription.cmake.in vendor/SDL/cmake/PreseedEmscriptenCache.cmake vendor/SDL/cmake/PreseedMSVCCache.cmake vendor/SDL/cmake/SDL3Config.cmake.in vendor/SDL/cmake/macros.cmake vendor/SDL/cmake/sdlchecks.cmake vendor/SDL/cmake/sdlcompilers.cmake vendor/SDL/cmake/sdlcpu.cmake vendor/SDL/cmake/sdlmanpages.cmake vendor/SDL/cmake/sdlplatform.cmake vendor/SDL/cmake/sdltargets.cmake vendor/SDL/include/build_config/SDL_build_config.h.cmake vendor/SDL/include/build_config/SDL_revision.h.cmake vendor/SDL_image/CMakeLists.txt vendor/SDL_image/cmake/GetGitRevisionDescription.cmake vendor/SDL_image/cmake/PrivateSdlFunctions.cmake vendor/SDL_image/cmake/sdlcpu.cmake vendor/SDL_image/cmake/sdlmanpages.cmake vendor/SDL_image/cmake/sdlplatform.cmake: phony
 
 
 #############################################

@@ -6,6 +6,9 @@ D:/projects/cpp/3dX/core/CMakeFiles/edit_cache.dir
 D:/projects/cpp/3dX/core/CMakeFiles/rebuild_cache.dir
 D:/projects/cpp/3dX/vendor/CMakeFiles/edit_cache.dir
 D:/projects/cpp/3dX/vendor/CMakeFiles/rebuild_cache.dir
+D:/projects/cpp/3dX/vendor/SDL_image/CMakeFiles/SDL3_image-shared.dir
+D:/projects/cpp/3dX/vendor/SDL_image/CMakeFiles/edit_cache.dir
+D:/projects/cpp/3dX/vendor/SDL_image/CMakeFiles/rebuild_cache.dir
 D:/projects/cpp/3dX/vendor/SDL/CMakeFiles/SDL3-shared.dir
 D:/projects/cpp/3dX/vendor/SDL/CMakeFiles/SDL3_test.dir
 D:/projects/cpp/3dX/vendor/SDL/CMakeFiles/SDL_uclibc.dir
