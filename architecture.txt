@@ -1,0 +1,25 @@
+1. Scene/Entity System
+Purpose: Manage game objects, their components, and scene graph.
+Why: It's the backbone for organizing everything in a game world.
+
+2. Input Handling
+Purpose: Abstract keyboard, mouse, controller, and possibly touch input.
+Why: Required for all interactive elements.
+
+3. Audio Management
+Purpose: Load, play, and manage sound effects and music.
+Why: Audio is critical for gameplay feedback and immersion.
+
+4. Scripting System
+Purpose: Integrate a scripting language (e.g., Lua, Python) for gameplay logic.
+Why: Makes gameplay code more flexible and modifiable without recompiling C++.
+
+5. Physics/Collision System
+Purpose: Manage collision detection, physics simulation, and responses.
+Why: Essential for interactive worlds and gameplay.
+6. UI/GUI System
+Purpose: Render and handle user interface elements (menus, HUD, etc).
+Why: Needed for menus, overlays, and in-game UI.
+7. Animation System
+Purpose: Handle sprite or skeletal animation for characters and objects.
+Why: Brings your world to life.

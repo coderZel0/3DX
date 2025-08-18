@@ -1,4 +1,6 @@
+#include <iostream>
 #include "game.h"
+
 
 bool Game::running = false;
 
@@ -9,12 +11,17 @@ void Game::init() { setRunning(true); }
 bool Game::isRunning() const { return running; }
 
 void Game::start() {
-  if(textureResourceManager == nullptr) {
-    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "TextureResourceManager is not initialized");
+  if (textureResourceManager == nullptr) {
+    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
+                 "TextureResourceManager is not initialized");
     return;
   }
 
-  std::shared_ptr<SDL_Texture> texture = textureResourceManager->loadResource("T1.jpg");
+  auto e = ecsGameWorld.entity("Player");
+  e.add<Position>(100.0f, 200.0f);
+
+  std::shared_ptr<SDL_Texture> texture =
+      textureResourceManager->loadResource("T1.jpg");
 
   while (isRunning()) {
     SDL_PollEvent(&event);

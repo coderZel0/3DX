@@ -1,3 +1,6 @@
+#ifndef RESOURCE_H
+#define RESOURCE_H
+
 #include <unordered_map>
 #include <memory>
 #include "SDL3/SDL_render.h"
@@ -26,3 +29,5 @@ class TextureResourceManager : public ResourceManager<SDL_Texture> {
     std::shared_ptr<SDL_Texture> loadResource(const char *resourceName) override;
     void unloadResource(const char *resourceName) override;
 };
+
+#endif
