@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 #define ASSERT_ENABLED 1
-#include "core/assert/assert.h"
+#include "engine/core/assert/assert.h"
 
 int main(int argc, char *argv[]) {
 
@@ -29,7 +29,6 @@ int main(int argc, char *argv[]) {
 
   Game game(renderer);
 
-  
   game.init();
   game.start(); // starts game loop
 

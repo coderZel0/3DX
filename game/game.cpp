@@ -1,6 +1,8 @@
-#include <iostream>
 #include "game.h"
-
+#include "engine/ecs/components.h"
+#include "flecs.h"
+#include "flecs/addons/flecs_c.h"
+#include <iostream>
 
 bool Game::running = false;
 
@@ -16,10 +18,8 @@ void Game::start() {
                  "TextureResourceManager is not initialized");
     return;
   }
-
   auto e = ecsGameWorld.entity("Player");
-  e.add<Position>(100.0f, 200.0f);
-
+  // ecs_add(ecsGameWorld, e, Position);
   std::shared_ptr<SDL_Texture> texture =
       textureResourceManager->loadResource("T1.jpg");
 

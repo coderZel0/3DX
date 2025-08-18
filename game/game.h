@@ -3,7 +3,7 @@
 
 #include "SDL3/SDL_events.h"
 #include "SDL3/SDL_render.h"
-#include "resource/resource.h"
+#include "engine/resources/resource.h"
 #include <flecs.h>
 
 class Game {
