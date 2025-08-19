@@ -1,8 +1,8 @@
+#include "engine/engine.h"
 #include "game/game.h"
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 #include <SDL3_image/SDL_image.h>
-#include <stdio.h>
 
 #define ASSERT_ENABLED 1
 #include "engine/core/assert/assert.h"
@@ -27,10 +27,12 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
+  NEngine::Engine engine(renderer);
+
   Game game(renderer);
 
-  game.init();
-  game.start(); // starts game loop
+  engine.initialize(std::bind(&Game::init, &game));
+  engine.run(std::bind(&Game::start, &game));
 
   SDL_DestroyRenderer(renderer);
   SDL_DestroyWindow(window);

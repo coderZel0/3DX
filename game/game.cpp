@@ -1,8 +1,5 @@
 #include "game.h"
 #include "engine/ecs/components.h"
-#include "flecs.h"
-#include "flecs/addons/flecs_c.h"
-#include <iostream>
 
 bool Game::running = false;
 
