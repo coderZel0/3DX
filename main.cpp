@@ -3,6 +3,7 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 #include <SDL3_image/SDL_image.h>
+#include <flecs.h>
 
 #define ASSERT_ENABLED 1
 #include "engine/core/assert/assert.h"
@@ -27,9 +28,11 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
-  NEngine::Engine engine(renderer);
+  flecs::world world;
 
-  Game game(renderer);
+  NEngine::Engine engine(renderer, world);
+
+  Game game(renderer, world);
 
   engine.initialize(std::bind(&Game::init, &game));
   engine.run(std::bind(&Game::start, &game));

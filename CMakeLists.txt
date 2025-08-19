@@ -17,12 +17,13 @@ set(CMAKE_PREFIX_PATH "${3dX_SOURCE_DIR}/vendor/SDL")
 
 add_executable(3dX main.cpp)
 
-add_subdirectory(game)
-target_link_libraries(${PROJECT_NAME} PUBLIC game)
-
+add_subdirectory(vendor)
 add_subdirectory(engine)
+add_subdirectory(game)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE game)
+
 # target_link_libraries(${PROJECT_NAME} PUBLIC engine)
 
-add_subdirectory(vendor)
 # target_link_libraries(${PROJECT_NAME} PRIVATE vendor)
 

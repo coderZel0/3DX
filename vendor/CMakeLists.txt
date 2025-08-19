@@ -24,7 +24,7 @@ set(FLECS_BUILD_TESTING OFF)
 set(FLECS_BUILD_DOCS OFF)
 FetchContent_MakeAvailable(flecs)
 
-list(APPEND LIBS SDL3_image::SDL3_image SDL3::SDL3 flecs::flecs_static)
+list(APPEND LIBS SDL3_image::SDL3_image SDL3::SDL3)
 
 add_library(vendor INTERFACE)
 target_include_directories(vendor INTERFACE "${3dX_SOURCE_DIR}/vendor")
