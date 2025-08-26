@@ -1,6 +1,7 @@
 #include "engine.h"
 #include "ecs/components.h"
 #include "ecs/systems/render.system.h"
+#include "flecs/addons/cpp/mixins/pipeline/decl.hpp"
 
 using namespace NEngine;
 
@@ -18,8 +19,9 @@ void Engine::register_ecs_components() {
 }
 
 void Engine::register_engine_systems() {
+
   ecs_world.system<Position, Texture, Rect>("RenderSystem")
-      .each(SYSTEMS::RenderSystem::update);
+      .each(SYSTEMS::RenderSystem::update_each);
 }
 
 void Engine::run(const std::function<void()> &game_loop) { game_loop(); }
