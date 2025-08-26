@@ -2,14 +2,14 @@
 #define ENGINE_H
 
 #include "SDL3/SDL_render.h"
-#include "flecs.h"
+#include <flecs.h>
 #include <functional>
 
 namespace NEngine {
 
 class Engine {
-  void initialize_engine_systems();
   void register_ecs_components();
+  void register_engine_systems();
 
 protected:
   SDL_Renderer *renderer;

@@ -1,9 +1,9 @@
 #include "SDL3/SDL_render.h"
 
-typedef struct {
+struct Position {
   float x;
   float y;
-} Position;
+};
 
 struct Velocity {
   float x;
@@ -15,8 +15,12 @@ struct Texture {
 };
 
 struct Rect {
-  int x;
-  int y;
-  int w;
-  int h;
+  float x;
+  float y;
+  float w;
+  float h;
+};
+
+struct RendererResource {
+  SDL_Renderer *renderer;
 };

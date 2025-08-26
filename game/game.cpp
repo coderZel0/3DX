@@ -19,7 +19,8 @@ void Game::start() {
   std::shared_ptr<SDL_Texture> playerTexture =
       textureResourceManager->loadResource("dirtSphere.png");
 
-  e.add<Position>().set<Texture>({playerTexture.get()});
+  e.set<Texture>({playerTexture.get()});
+  e.set<Position>({10, 10}).set<Rect>({10, 10, 50, 50});
   // e.add<Texture>(playerTexture.get());
   // ecs_add(ecsGameWorld, e, Position);
   std::shared_ptr<SDL_Texture> texture =
@@ -33,6 +34,7 @@ void Game::start() {
     // SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0x00);
     SDL_RenderClear(renderer);
     SDL_RenderTexture(renderer, texture.get(), NULL, NULL);
+    ecs_world.progress();
     SDL_RenderPresent(renderer);
   }
 }
