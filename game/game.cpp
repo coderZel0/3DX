@@ -10,6 +10,9 @@ void Game::init() { setRunning(true); }
 bool Game::isRunning() const { return running; }
 
 void Game::start() {
+  TextureResourceManager *textureResourceManager =
+      ecs_world.get<EngineResources>().textureResourceManager;
+
   if (textureResourceManager == nullptr) {
     SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
                  "TextureResourceManager is not initialized");

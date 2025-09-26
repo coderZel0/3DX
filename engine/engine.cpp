@@ -7,6 +7,8 @@ using namespace NEngine;
 
 void Engine::initialize(const std::function<void()> &init) {
   init(); // game initialization
+  Engine::textureResourceManager =
+      std::make_unique<TextureResourceManager>(renderer);
   register_ecs_components();
   register_engine_systems();
 }
@@ -16,6 +18,7 @@ void Engine::register_ecs_components() {
   ecs_world.component<Texture>();
   ecs_world.component<Rect>();
   ecs_world.set<RendererResource>({renderer});
+  ecs_world.set<EngineResources>({textureResourceManager.get()});
 }
 
 void Engine::register_engine_systems() {

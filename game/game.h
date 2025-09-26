@@ -10,14 +10,11 @@ class Game {
   static bool running;
   SDL_Event event;
   SDL_Renderer *renderer;
-  TextureResourceManager *textureResourceManager;
   flecs::world ecs_world;
 
 public:
   Game(SDL_Renderer *renderer, flecs::world &world)
-      : renderer(renderer),
-        textureResourceManager(new TextureResourceManager(renderer)),
-        ecs_world(world) {}
+      : renderer(renderer), ecs_world(world) {}
   ~Game();
 
   void init();

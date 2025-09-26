@@ -1,5 +1,6 @@
 #pragma once
 #include "SDL3/SDL_render.h"
+#include "resources/resource.h"
 
 struct Position {
   float x;
@@ -24,4 +25,8 @@ struct Rect {
 
 struct RendererResource {
   SDL_Renderer *renderer;
+};
+
+struct EngineResources {
+  TextureResourceManager *textureResourceManager;
 };

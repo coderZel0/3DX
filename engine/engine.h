@@ -2,8 +2,10 @@
 #define ENGINE_H
 
 #include "SDL3/SDL_render.h"
+#include "resources/resource.h"
 #include <flecs.h>
 #include <functional>
+#include <memory>
 
 namespace NEngine {
 
@@ -14,6 +16,7 @@ class Engine {
 protected:
   SDL_Renderer *renderer;
   flecs::world ecs_world;
+  std::unique_ptr<TextureResourceManager> textureResourceManager;
 
 public:
   Engine(SDL_Renderer *renderer, flecs::world &world)
